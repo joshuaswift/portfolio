@@ -1,5 +1,3 @@
-
-
 img {
   display: none;
 }
@@ -28,76 +26,122 @@ a:-webkit-any-link {
 header {
   width: 100%;
   min-height: 100vh;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 50px;
-  border: 15px solid #BED8D4;
+  border: 15px solid #bed8d4;
   padding-left: 75px;
   background: black;
-  color: #BED8D4;
+  color: #bed8d4;
+}
+
+.hamburger {
+  outline: none;
+}
+
+.is-active {
+  background-color: black !important;
+}
+
+.hamburger-inner {
+  background-color: #bed8d4 !important;
+}
+
+.hamburger-inner::before {
+  background-color: #bed8d4 !important;
+}
+
+.hamburger-inner::after {
+  background-color: #bed8d4 !important;
 }
 
 header > h1 {
   border: none;
 }
 
- .about-container {
+.menu-overlay {
+  display: none;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51, 51, 51, 0.7);
+  z-index: 10;
+  position: fixed;
   border: 15px solid black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 20px;
   padding-left: 75px;
   padding-bottom: 75px;
-  background: #BED8D4;
+  background: #bed8d4;
 }
-  
 
+.menu-overlay a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.menu-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 50px;
+}
+
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  border: 15px solid black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  padding-left: 75px;
+  padding-bottom: 75px;
+  background: #bed8d4;
+}
 
 h1 {
   border-bottom: 5px solid;
   border-color: inherit;
   display: inline-block;
   font-size: 50px;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 h2 {
   border-bottom: 5px solid black;
   display: inline-block;
   font-size: 30px;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
-
-
 
 .menu-container {
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
-  font-size: 30px;
+  font-size: 50px;
   align-items: center;
 }
 
-.menu-icon {
-  margin-left: 10px;
-  margin-right: 15px;
+.menu-button {
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
-
-
+.close-menu {
+  margin-left: 5px;
+  margin-top: 5px;
+  padding-right: 30px;
+}
 
 .about-heading {
   border-bottom: 5px solid black;
   display: inline-block;
   font-size: 50px;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 .about-intro {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 30px;
 }
-
 
 .interests-list {
   margin-bottom: 75px;
@@ -107,278 +151,148 @@ h2 {
   width: 100%;
   min-height: 100vh;
   border: 15px solid black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   padding-left: 75px;
-  background: #BED8D4;
+  background: #bed8d4;
 }
 
 .work-container > a {
-    margin-bottom: 20px;
-    font-family: 'Inconsolata', monospace; 
+  margin-bottom: 20px;
+  font-family: "Inconsolata", monospace;
+}
+
+.work-container > a:hover {
+  background: black;
+  color: #bed8d4;
+  cursor: pointer;
 }
 
 .contact-container {
   width: 100%;
   min-height: 100vh;
   border: 15px solid black;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 20px;
   padding-left: 75px;
-  background: #BED8D4;
+  background: #bed8d4;
 }
 
 .icons > a {
-    color: black;
-    text-decoration: none;
-    margin-bottom: 20px;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .zoom {
-    transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .zoom:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
-
 
 input[type="text"] {
   width: 50%;
   //height: 2.5em;
-  background: #BED8D4;
+  background: #bed8d4;
   box-shadow: none;
   outline: none;
   border-top: none;
   border-right: none;
   border-left: none;
   border-bottom: 5px solid black;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   color: black;
   font-size: 20px;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
   color: black;
 }
-::-moz-placeholder { /* Firefox 19+ */
+::-moz-placeholder {
+  /* Firefox 19+ */
   color: black;
 }
-:-ms-input-placeholder { /* IE 10+ */
+:-ms-input-placeholder {
+  /* IE 10+ */
   color: black;
 }
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
+  /* Firefox 18- */
   color: black;
 }
 
 textarea {
   width: 50%;
   height: 5em;
-  background: #BED8D4;
+  background: #bed8d4;
   box-shadow: none;
   outline: none;
   border: 5px solid black;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   color: black;
   font-size: 20px;
   margin-top: -20px;
   margin-bottom: -20px;
 }
 
-
 input[type="submit"] {
   width: 10em;
   height: 2.5em;
   margin-bottom: 25px;
-  font-family: 'Inconsolata', monospace;
-  background: #BED8D4;
+  font-family: "Inconsolata", monospace;
+  background: #bed8d4;
   font-size: 20px;
   border: 5px solid black;
-  
 }
 
 input[type="submit"]:hover {
   background: black;
-  color: #BED8D4;
+  color: #bed8d4;
   cursor: pointer;
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #BED8D4 inset;
+  -webkit-box-shadow: 0 0 0 30px #bed8d4 inset;
 }
-
 
 footer {
   width: 100%;
   min-height: 50vh;
-  border: 15px solid #BED8D4;
-  font-family: 'Inconsolata', monospace;
+  border: 15px solid #bed8d4;
+  font-family: "Inconsolata", monospace;
   //font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   padding-left: 75px;
   background: black;
-  color: #BED8D4;
+  color: #bed8d4;
+}
+
+.footer-menu a {
+  color: #bed8d4;
+  text-decoration: none;
+}
+
+.footer-menu a:link {
+  color: #bed8d4;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: #bed8d4;
 }
 
 .footer-menu {
   list-style: none;
   padding-left: 0;
   font-size: 30px;
-  text-decoration: none;
-}
-
-
-
-.footer-menu > a {
- color: #BED8D4;
- text-decoration: none;
-}
-
-.footer-menu > a:link {
- color: #BED8D4; 
-}
-
-#menuToggle
-{
-  display: block;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 300px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  /*left: -5px;*/
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #BED8D4;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #BED8D4;
-  color: #BED8D4;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 800px;
-  margin: -100px 0 0 0;
-  padding: 50px;
-  padding-left: 25px;
-  padding-top: 125px;
-  right: -50px;
-  color: black;
-  
-  background: #BED8D4;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding-top: 10px;
-  padding-right: 50px;
-  font-size: 22px;
-}
-
-/*
- * And let's fade it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: scale(1.0, 1.0);
-  opacity: 1;
 }
 
 /*RESPONSIVE STYLES*/
-
-
-
 
 /*Small devices*/
 @media (max-width: 500px) {
@@ -386,91 +300,77 @@ footer {
     font-size: 40px;
     padding-right: 25px;
     padding-left: 25px;
-    
   }
-  
+
   h1 {
     border-bottom: none;
     font-size: 40px;
   }
-  
+
   h2 {
     border-bottom: none;
     font-size: 25px;
   }
-  
+
   h2:after {
-    content:"";
+    content: "";
     display: block;
     //margin: 0 auto;
     width: 50%;
     padding-top: 10px;
     border-bottom: 5px solid black;
   }
-  
+
   h1:after {
-    content:"";
+    content: "";
     display: block;
     //margin: 0 auto;
     width: 50%;
     padding-top: 10px;
     border-bottom: 5px solid black;
   }
-  
+
   a {
     margin-bottom: 50px;
   }
-  
+
   .menu-container {
     padding-right: 0px;
     padding-top: 5px;
     margin-right: 0px;
   }
-  
-  .menu-icon {
-   
-  }
-  
+
   .menu-container > p {
     font-size: 50px;
     display: none;
-    
   }
-  
+
   .about-container {
     padding-right: 25px;
     padding-left: 25px;
   }
-  
+
   .work-container {
     padding-right: 55px;
     padding-left: 25px;
     padding-bottom: 25px;
   }
-  
- 
-  
+
   .contact-container {
     padding-right: 25px;
     padding-left: 25px;
   }
-  
+
   textarea {
     width: 75%;
   }
-  
+
   input[type="submit"] {
     width: 75%;
   }
-  
+
   footer {
     padding-right: 25px;
     padding-left: 25px;
   }
-  
-  
 }
-
-
-
-
