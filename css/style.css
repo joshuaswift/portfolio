@@ -236,34 +236,23 @@ textarea {
   font-family: "Inconsolata", monospace;
   color: black;
   font-size: 20px;
-  margin-top: -20px;
+  margin-top: 10px;
   margin-bottom: -20px;
+}
+
+.contact-container label {
+  margin-top: 5px;
 }
 
 input[type="submit"] {
   width: 10em;
   height: 2.5em;
+  margin-top: 25px;
   margin-bottom: 25px;
   font-family: "Inconsolata", monospace;
   background: #bed8d4;
   font-size: 20px;
   border: 5px solid black;
-}
-
-.contact-container button {
-  width: 10em;
-  height: 2.5em;
-  margin-bottom: 25px;
-  font-family: "Inconsolata", monospace;
-  background: #bed8d4;
-  font-size: 20px;
-  border: 5px solid black;
-}
-
-.contact-container button:hover {
-  background: black;
-  color: #bed8d4;
-  cursor: pointer;
 }
 
 input[type="submit"]:hover {
