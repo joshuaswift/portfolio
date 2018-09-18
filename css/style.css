@@ -34,26 +34,6 @@ header {
   color: #bed8d4;
 }
 
-.hamburger {
-  outline: none;
-}
-
-.is-active {
-  background-color: black !important;
-}
-
-.hamburger-inner {
-  background-color: #bed8d4 !important;
-}
-
-.hamburger-inner::before {
-  background-color: #bed8d4 !important;
-}
-
-.hamburger-inner::after {
-  background-color: #bed8d4 !important;
-}
-
 header > h1 {
   border: none;
 }
@@ -270,7 +250,6 @@ footer {
   min-height: 50vh;
   border: 15px solid #bed8d4;
   font-family: "Inconsolata", monospace;
-  //font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   padding-left: 75px;
   background: black;
