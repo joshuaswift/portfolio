@@ -1,174 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <!--  Meta  -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Swift</title>
-    <link rel="icon" href="https://res.cloudinary.com/dsjoktefu/image/upload/v1537089425/Logo.png">
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Swift</title>
+  <link rel="icon" href="https://res.cloudinary.com/dsjoktefu/image/upload/v1537089425/Logo.png">
 
 
-    <!--  Styles  -->
-    <link rel="stylesheet" href="css/style.css">
-    <!--  Fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-  </head>
+  <!--  Styles  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!--  Fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
 
-  <body>
-    <header>
-      <div class="menu-container">
-        <p>MENU</p>
-        <div class="menu-button">
-          <i class="fas fa-bars"></i>
-        </div>
+<body>
+  <header>
+    <div class="menu-container">
+      <p>MENU</p>
+      <div class="menu-button">
+        <i class="fas fa-bars"></i>
+      </div>
 
+    </div>
+
+
+
+
+    <h1>HI, MY<br>NAME'S JOSH<br>
+      AND I LOVE BUILDING WEBSITES!</h1>
+    <br>
+    <h1>WANT TO KNOW MORE?</h1>
+    <br>
+    <img src="https://res.cloudinary.com/dsjoktefu/image/upload/v1537530702/received_332149914206331_lojuco.jpg">
+    <a href="#about"> <i class="fas fa-angle-double-down"></i></a>
+
+  </header>
+
+  <div class="menu-overlay">
+    <div class="menu-container">
+      <p>MENU</p>
+      <div class="close-menu">
+        <i class="fa fa-times"></i>
       </div>
 
 
+    </div>
+    <h1>MENU</h1>
+    <ul class="menu-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a </li> <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
 
-      <h1>HI, MY<br>NAME'S JOSH<br>
-        AND I LOVE BUILDING WEBSITES!</h1>
-      <br>
-      <h1>WANT TO KNOW MORE?</h1>
-      <br>
-      <img src="https://res.cloudinary.com/dsjoktefu/image/upload/v1537530702/received_332149914206331_lojuco.jpg">
-      <a href="#about"> <i class="fas fa-angle-double-down"></i></a>
-
-    </header>
-
-    <div class="menu-overlay">
-      <div class="menu-container">
-        <p>MENU</p>
-        <div class="close-menu">
-          <i class="fa fa-times"></i>
-        </div>
+  <div class="about-container" id="about">
+    <h1>ABOUT</h1>
+    <p class="about-intro">I'm currently based in Manchester and after spending a couple of years learning to code by
+      working on personal projects and open source, I'm ready to get started in a professional setting!</p>
 
 
-      </div>
-      <h1>MENU</h1>
-      <ul class="menu-list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a </li> <li><a href="#contact">Contact</a></li>
+    <p>My passion is using web technologies to create creative and functional experiences on the web which help make
+      people's
+      lives easier.
+      I mostly use JavaScript and React to achieve this, but I'm always learning new languages and frameworks to
+      further my abilities.
+    </p>
+
+    <p>I consider myself a life-long learner, which extends to all my passions, including culinary experiments and
+      producing music!</p>
+
+    <h2>TECHNOLOGIES</h2>
+    <div class="interests-list">
+      <ul>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>Webpack</li>
+        <li>Git/GitHub</li>
+
       </ul>
     </div>
+  </div>
+
+  <div class="work-container" id="projects">
+    <h1>PROJECTS</h1>
+    <br></br>
+
+    <h2>GOODBOWL</h2>
+
+    <p>GoodBowl uses data from the Edamam API to display a list of buddha bowl recipes with nutritional information
+      for each recipe. I used React for the front-end as this meant I could re-use components throughout the site,
+      making it easier to maintain and refactor. I used Express for the back-end, as I find it's the easiest and
+      simplest way to get a server up and running for small projects like this.</p>
+
+    <a target="blank" href="https://www.goodbowl.xyz/">VISIT GOODBOWL</a>
+    <br></br>
+
+    <h2>RESTAURANT ROULETTE</h2>
+
+    <p>Restaurant Roulette is a React app with an Express back-end which obtains the users location, then provides
+      details of a random restaurant in the vicinity to remove the analysis paralysis usually involved when choosing
+      somewhere to eat! Data is pulled from the Zomato API. </p>
+
+    <a target="blank" href="https://www.restaurant-roulette.xyz/">VISIT RESTAURANT ROULETTE</a>
+    <br></br>
+    <h2>PASTEL-FLAVOURED WEATHER APP</h2>
+
+    <p>I made this as part of the freeCodeCamp curriculum using JavaScript. The app shows local weather based on the
+      users location which is obtained using the HTML5 geolocation API.</p>
+
+    <a target="blank" href="https://s.codepen.io/Joshuaswift/debug/GQzJKj/NQkzYqqamydA">VISIT WEATHER APP</a>
+    <br></br>
+    <h2>INSTAGRAM GALLERY</h2>
+
+    <p>I was interested in learning more about Vue, so built this site which displays Instagram posts as a gallery
+      view to learn about the core concepts. I plan to expand this to a site which allows users to enter their own
+      login details and create their own gallery linked to their account. </p>
+
+    <a target="blank" href="https://codesandbox.io/s/0vpr7zjx2w">VISIT INSTAGRAM GALLERY</a>
+    <br></br>
 
 
-    <div class="about-container" id="about">
-      <h1>ABOUT</h1>
-      <p class="about-intro">I'm currently based in Manchester and after spending a couple of years learning to code by
-        working on personal projects and open source, I'm ready to get started in a professional setting!</p>
 
+  </div>
 
-      <p>My passion is using web technologies to create creative and functional experiences on the web which help make people's
-        lives easier.
-        I mostly use JavaScript and React to achieve this, but I'm always learning new languages and frameworks to further my abilities.
-      </p>
+  <div class="contact-container" id="contact">
+    <h1>CONTACT</h1>
+    <br></br>
 
-      <p>I consider myself a life-long learner, which extends to all my passions, including culinary experiments and
-        producing music!</p>
+    <form method="post" name="contact_form" netlify>
 
-      <h2>TECHNOLOGIES</h2>
-      <div class="interests-list">
-        <ul>
-          <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>Webpack</li>
-          <li>Git/GitHub</li>
-
-        </ul>
-      </div>
-    </div>
-
-    <div class="work-container" id="projects">
-      <h1>PROJECTS</h1>
+      <input type="text" name="name" placeholder="NAME">
       <br></br>
-
-      <h2>GOODBOWL</h2>
-
-      <p>GoodBowl uses data from the Edamam API to display a list of buddha bowl recipes with nutritional information
-        for each recipe. I used React for the front-end as this meant I could re-use components throughout the site,
-        making it easier to maintain and refactor. I used Express for the back-end, as I find it's the easiest and
-        simplest way to get a server up and running for small projects like this.</p>
-
-      <a target="blank" href="https://www.goodbowl.xyz/">VISIT GOODBOWL</a>
+      <input type="text" name="email" placeholder="EMAIL">
       <br></br>
-
-      <h2>RESTAURANT ROULETTE</h2>
-
-      <p>Restaurant Roulette is a React app with an Express back-end which obtains the users location, then provides
-        details of a random restaurant in the vicinity to remove the analysis paralysis usually involved when choosing
-        somewhere to eat! Data is pulled from the Zomato API. </p>
-
-      <a target="blank" href="https://www.restaurant-roulette.xyz/">VISIT RESTAURANT ROULETTE</a>
+      <label for="message" class="message-label">MESSAGE</label>
       <br></br>
-      <h2>PASTEL-FLAVOURED WEATHER APP</h2>
-
-      <p>I made this as part of the freeCodeCamp curriculum using JavaScript. The app shows local weather based on the
-        users location which is obtained using the HTML5 geolocation API.</p>
-
-      <a target="blank" href="https://s.codepen.io/Joshuaswift/debug/GQzJKj/NQkzYqqamydA">VISIT WEATHER APP</a>
+      <textarea name="message"></textarea>
       <br></br>
-      <h2>INSTAGRAM GALLERY</h2>
-
-      <p>I was interested in learning more about Vue, so built this site which displays Instagram posts as a gallery
-        view to learn about the core concepts. I plan to expand this to a site which allows users to enter their own
-        login details and create their own gallery linked to their account. </p>
-
-      <a target="blank" href="https://codesandbox.io/s/0vpr7zjx2w">VISIT INSTAGRAM GALLERY</a>
-      <br></br>
+      <input type="submit" value="SEND">
 
 
+    </form>
 
-    </div>
+    <div class="icons">
+      <a href="https://github.com/joshuaswift" target="_blank"><i class="fab fa-github fa-2x zoom"></i></a>
+      <i class="fab fa-twitter fa-2x zoom"></i>
+      <i class="fab fa-linkedin-in fa-2x zoom"></i>
+      <a href="https://codepen.io/Joshuaswift/" target="_blank"><i class="fab fa-codepen fa-2x zoom"></i></a>
 
-    <div class="contact-container" id="contact">
-      <h1>CONTACT</h1>
-      <br></br>
-
-      <form method="post" name="contact_form" netlify>
-
-        <input type="text" name="name" placeholder="NAME">
-        <br></br>
-        <input type="text" name="email" placeholder="EMAIL">
-        <br></br>
-        <label for="message" class="message-label">MESSAGE</label>
-        <br></br>
-        <textarea name="message"></textarea>
-        <br></br>
-        <input type="submit" value="SEND">
-
-
-      </form>
-
-      <div class="icons">
-        <a href="https://github.com/joshuaswift" target="_blank"><i class="fab fa-github fa-2x zoom"></i></a>
-        <i class="fab fa-twitter fa-2x zoom"></i>
-        <i class="fab fa-linkedin-in fa-2x zoom"></i>
-        <a href="https://codepen.io/Joshuaswift/" target="_blank"><i class="fab fa-codepen fa-2x zoom"></i></a>
-
-        </a>
-
-      </div>
+      </a>
 
     </div>
 
-    <footer>
-      <h1>MENU</h1>
-      <ul class="footer-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact" </a>Contact </li> </ul> </footer> <!-- Scripts -->
-            <script src="js/index.js"></script>
-  </body>
+  </div>
 
-  </html>
+  <footer>
+    <h1>MENU</h1>
+    <ul class="footer-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" </a>Contact </li> </ul> </footer> <!-- Scripts -->
+          <script src="js/index.js"></script>
+</body>
+
+</html>
