@@ -26,7 +26,7 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
-header {
+.intro {
   width: 100%;
   min-height: 100vh;
   font-family: "Inconsolata", monospace;
@@ -37,7 +37,7 @@ header {
   color: #bed8d4;
 }
 
-header > h1 {
+.intro > h1 {
   border: none;
 }
 
@@ -110,7 +110,7 @@ h2:after {
   border-bottom: 5px solid black;
 }
 
-.menu-container {
+nav {
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
@@ -145,7 +145,7 @@ h2:after {
   margin-bottom: 75px;
 }
 
-.work-container {
+.projects-container {
   width: 100%;
   min-height: 100vh;
   border: 15px solid black;
@@ -155,12 +155,12 @@ h2:after {
   background: #bed8d4;
 }
 
-.work-container > a {
+.projects-container > a {
   margin-bottom: 20px;
   font-family: "Inconsolata", monospace;
 }
 
-.work-container > a:hover {
+.projects-container > a:hover {
   background: black;
   color: #bed8d4;
   cursor: pointer;
@@ -317,7 +317,7 @@ footer {
   h2:after {
     content: "";
     display: block;
-    //margin: 0 auto;
+    margin: 0 auto;
     width: 50%;
     padding-top: 10px;
     border-bottom: 5px solid black;
@@ -336,13 +336,13 @@ footer {
     margin-bottom: 50px;
   }
 
-  .menu-container {
+  nav {
     padding-right: 0px;
     padding-top: 5px;
     margin-right: 0px;
   }
 
-  .menu-container > p {
+  nav > p {
     font-size: 50px;
     display: none;
   }
@@ -352,7 +352,7 @@ footer {
     padding-left: 25px;
   }
 
-  .work-container {
+  .projects-container {
     padding-right: 55px;
     padding-left: 25px;
     padding-bottom: 25px;
