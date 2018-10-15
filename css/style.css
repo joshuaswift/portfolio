@@ -346,6 +346,11 @@ footer {
     font-size: 50px;
     display: none;
   }
+  
+   .intro {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 
   .about-container {
     padding-right: 25px;
